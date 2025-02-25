@@ -6,8 +6,8 @@ public class User {
 	private String _email;
 	private String _password;
 	public Vector<Ticket> _buys_belongs = new Vector<Ticket>();
-	public Vector<Artist> _follows = new Vector<Artist>();
-	public Vector<Payment> _makes = new Vector<Payment>();
+	public Vector<Object> _follows = new Vector<Object>();
+	public Vector<Object> _makes = new Vector<Object>();
 
 	public void register() {
 		throw new UnsupportedOperationException();

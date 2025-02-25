@@ -1,3 +1,5 @@
+package com.example.musicapp;
+
 import java.util.Vector;
 
 public class Artist {
@@ -37,7 +39,7 @@ public class Artist {
         return _genre;
     }
 
-    public Vector<Event> getHave() {
+    public Vector<Event> getEvents() {
         return _have;
     }
 }

@@ -4,7 +4,7 @@ public class Ticket {
 	private int _userID;
 	private double _price;
 	public User _buys_belongs;
-	public Payment _linked;
+	public Object _linked;
 
 	public void sendTicket() {
 		throw new UnsupportedOperationException();

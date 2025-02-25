@@ -1,3 +1,5 @@
+package com.example.musicapp;
+
 import java.util.Vector;
 
 public class Event {
@@ -9,8 +11,8 @@ public class Event {
 	private double _price;
 	private int _availableTicket;
 	public Vector<Artist> _have = new Vector<Artist>();
-	public Venue _takes_place;
-	public Vector<Ticket> _processes = new Vector<Ticket>();
+	public Object _takes_place;
+	public Vector<Object> _processes = new Vector<Object>();
 
 	public void updateEvent() {
 		throw new UnsupportedOperationException();
@@ -23,4 +25,40 @@ public class Event {
 	public void cancelEvent() {
 		throw new UnsupportedOperationException();
 	}
+
+    public int getEventID() {
+        return _eventID;
+    }
+
+    public String getTitle() {
+        return _title;
+    }
+
+    public Object getDate() {
+        return _date;
+    }
+
+    public Object getTime() {
+        return _time;
+    }
+
+    public String getVenue() {
+        return _venue;
+    }
+
+    public double getPrice() {
+        return _price;
+    }
+
+    public int getAvailableTicket() {
+        return _availableTicket;
+    }
+
+    public Vector<Artist> getHave() {
+        return _have;
+    }
+
+    public Vector<Object> getProcesses() {
+        return _processes;
+    }
 }

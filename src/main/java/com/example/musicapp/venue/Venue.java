@@ -5,7 +5,7 @@ public class Venue {
 	private String _name;
 	private String _location;
 	private int _capacity;
-	public Vector<Event> _takes_place = new Vector<Event>();
+	public Vector<Object> _takes_place = new Vector<Object>();
 
 	public void checkAvailability() {
 		throw new UnsupportedOperationException();
