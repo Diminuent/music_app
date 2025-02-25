@@ -3,8 +3,8 @@ import java.util.Vector;
 public class Event {
 	private int _eventID;
 	private String _title;
-	private Date _date;
-	private Time _time;
+	private Object _date;
+	private Object _time;
 	private String _venue;
 	private double _price;
 	private int _availableTicket;
