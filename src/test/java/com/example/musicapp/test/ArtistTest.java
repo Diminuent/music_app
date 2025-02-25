@@ -1,7 +1,6 @@
 import org.junit.Test;
 import static org.junit.Assert.*;
 import java.util.Vector;
-import Artist;
 
 public class ArtistTest {
 
