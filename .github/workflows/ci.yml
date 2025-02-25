@@ -27,13 +27,15 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ~/.m2
-          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/music_app/pom.xml') }}
           restore-keys: ${{ runner.os }}-maven
 
-      # Build the project and run tests
+      # Build the project and run tests from the correct directory
       - name: Build with Maven
+        working-directory: music_app
         run: mvn clean install
 
       # Run tests separately (if needed)
       - name: Run Tests
+        working-directory: music_app
         run: mvn test
